@@ -1,4 +1,4 @@
-/Users/sunyuqin/git/android_studio/FFmpeg/app/src/main/obj/local/armeabi/objs/ffplayer/com_ylcq_ffmpeg_FFPlayer.o: \
+/Users/sunyuqin/git/android_studio/FFmpeg/app/src/main/obj/local/armeabi/objs/FFPlayer/com_ylcq_ffmpeg_FFPlayer.o: \
  /Users/sunyuqin/git/android_studio/FFmpeg/app/src/main/jni/com_ylcq_ffmpeg_FFPlayer.cpp \
  /Users/sunyuqin/git/android_studio/FFmpeg/app/src/main/jni/com_ylcq_ffmpeg_FFPlayer.h \
  /Users/sunyuqin/git/android_studio/FFmpeg/app/src/main/jni/log_util.h \

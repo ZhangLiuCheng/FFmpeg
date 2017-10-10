@@ -12,19 +12,36 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:onClick="yuv"
-        android:text="解码成yuv格式" />
+        android:text="视频解码成yuv格式" />
+
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:onClick="push"
-        android:text="编码h264视频" />
+        android:text="摄像头数据编码h264视频" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:onClick="play"
-        android:text="解码h264视频" />
+        android:text="播放h264视频" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="encoder"
+        android:text="RGB编码H264" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="decoder"
+        android:text="H264解码RGB" />
+
 </LinearLayout>

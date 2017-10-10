@@ -6,7 +6,7 @@ import android.view.Surface;
 public class FFPlayer {
 
     static {
-        System.loadLibrary("ffplayer");
+        System.loadLibrary("FFPlayer");
     }
 
     public native static void render(String videopath, Surface surface);

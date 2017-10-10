@@ -4,21 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.ylcq.ffmpeg.MainActivity">
 
     <Button
-        android:onClick="begin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="开始采集"/>
+        android:onClick="connect"
+        android:text="连接"/>
 
     <SurfaceView
-        android:id="@+id/surfaceview"
+        android:id="@+id/surfaceView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

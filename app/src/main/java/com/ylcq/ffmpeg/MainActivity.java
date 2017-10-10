@@ -34,36 +34,21 @@ public class MainActivity extends AppCompatActivity {
     public void push(View view) {
         Intent intent = new Intent(this, PusherActivity.class);
         startActivity(intent);
-
-        /*
-        final String videopath = "/storage/emulated/0/Android/data/com.ylcq.ffmpeg/cache/camera.h264";
-        final String outPath = "/storage/emulated/0/Android/data/com.ylcq.ffmpeg/cache/out.txt";
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                File file = new File(videopath);
-                try {
-                    InputStream is = new FileInputStream(file);
-                    OutputStream os = new FileOutputStream(outPath);
-                    FileWriter fw = new FileWriter(outPath);
-                    int i = -1;
-                    while((i = is.read()) != -1) {
-                        fw.append(String.valueOf(i)).append(" ");
-                    }
-                    is.close();
-                    fw.close();
-                    Log.v("Qingyuan", "结束");
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }).start();
-        */
     }
 
     public void play(View view) {
         Intent intent = new Intent(this, PlayerActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void encoder(View view) {
+        Intent intent = new Intent(this, EncoderActivity.class);
+        startActivity(intent);
+    }
+
+    public void decoder(View view) {
+        Intent intent = new Intent(this, DecoderActivity.class);
         startActivity(intent);
     }
 }

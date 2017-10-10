@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -66,6 +67,12 @@ public class PusherActivity extends AppCompatActivity implements Camera.PreviewC
         mSurfaceHolder = mSurfaceView.getHolder();
         mSurfaceHolder.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS);
         mSurfaceHolder.addCallback(this);
+    }
+
+    private boolean caiji;
+    // 开始采集
+    public void begin(View view) {
+        caiji = true;
     }
 
     @Override
@@ -150,6 +157,7 @@ public class PusherActivity extends AppCompatActivity implements Camera.PreviewC
     }
 
     public synchronized int addVideoData(byte[] data) {
+        if (caiji == false) return 0;
         int s = FFPusher.encoding(data);
         Log.v("QingYuan", "addVideoData  " + s);
         return s;

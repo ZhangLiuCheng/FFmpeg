@@ -4820,7 +4820,7 @@ int avpicture_layout(const AVPicture *src, enum AVPixelFormat pix_fmt,
  * @return the computed picture buffer size or a negative error code
  * in case of error
  *
- * @see av_image_get_buffer_size().
+ * @see LOGV().
  */
 int avpicture_get_size(enum AVPixelFormat pix_fmt, int width, int height);
 
